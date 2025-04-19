@@ -1,91 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>TechnixCRM Home Page Redesign by Team Neo Athelios @ Web Dash, IEEE JMI</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechnixCRM - Modern Customer Relationship Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <header class="sticky-header">
-        <nav class="navbar" id="mainHeader">
-            <div class="logo" style="padding: 5px; border-radius: 8px; background: linear-gradient(30deg, blue, orange,blue); margin: 5px;">
-                <a href = "https://neo-athelios.github.io/WebDash/"><img src="logo.png" alt="TechnixCRM Logo" style="height: 50px; display: block; background: rgb(0, 0, 0); border-radius: 4px; padding: 1px;"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a id="goToTopLink" title="Go to top" data-section="home" class="active" style="border: 1px solid black;">Home</a></li>
-                <li><a href="#features" data-section="features" style="border: 1px solid black;">Features</a></li>
-                <li><a href="#contact" data-section="contact" style="border: 1px solid black;">Contact</a></li>
-                <li><a class="btn-primary" href="#" style="border: 1px solid black;">Login</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <a href="https://neo-athelios.github.io/WebDash/" class="logo">
+          <img src="logo.png" alt="TechnixCRM Logo">
+            <span class="logo-text" style="font-size: 34px;"><pre> Technix - CRM  </pre></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#footer">Quick Links</a></li>
+          <li><a href="http://app.technixcrm.com/login" class="btn-primary">Login</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <main>
-        <div class="below-header-buttons">
-            <a class="demo-btn" id="bookDemoBtn">Book a Demo</a>
-            <a class="trial-btn" id="freeTrialBtn">Free Trial</a>
-        </div>
-
-        <section id="home" class="home-section">
-            <div class="home-content">
-                <h1>The Foundation for <br> Building and Retaining <span class="highlight">Customer Relationships</span></h1>
-                <p>Generate leads, Track prospects, Avail opportunities, <br> Close deals and Retain clients with TechnixCRM.</p>
-            </div>
-        </section>
-
-        <section id="features">
-            <h2>Features Section</h2>
-            <p>Here are some of the amazing features.</p>
-            <div style="height: 500px;"></div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Get in touch with us!</p>
-            <div style="height: 500px;"></div>
-        </section>
-    </main>
-
-    <div class="modal" id="popupModal">
-        <div class="modal-content" id="modalContent">
-            <h2 id="modalTitle">Coming Soon</h2>
-            <p id="modalText">This feature is not available yet.</p>
-            <button class="close-btn" onclick="closeModal()">Close</button>
-        </div>
+    <div class="below-header-buttons">
+      <a href="#" class="btn btn-primary" id="bookDemoBtn">Book a Demo</a>
+      <a href="#" class="btn btn-outline" id="freeTrialBtn">Free Trial</a>
     </div>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
+    <main>
+        <section id="home" class="hero" style="padding: 4rem 5% 2rem;">
+            <h1><span class="highlight">The Foundation for Building and Retaining Customer Relationships</span></h1>
+            <p>Generate leads, track prospects, avail opportunities, close deals and retain clients with TechnixCRM - the all-in-one solution for your business growth.</p>
+            <img src="https://technixcrm.com/assets/images/banner-img.gif" alt="TechnixCRM Banner" style="width: 100%; max-width: 600px; margin-top: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+          </section>
+                 <!-- Glassmorphism Slider -->
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <div class="slide slide-1">
+            <div class="glass-card">
+              <div style="display: flex; gap: 1rem; align-items: flex-start">
+                <div
+                  style="
+                    flex-basis: 55%;
+                    max-width: 55%;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                    color: white;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                  "
+                >
+                  <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem">
+                    Increase Sales
+                  </h2>
+                  <p style="color: var(--primary-dark); font-weight: 500">
+                    Bring in quality leads, nurture them, and turn them into
+                    happy, paying customers.
+                  </p>
+                  <ul>
+                    <li>Targeting new customers</li>
+                    <li>Prioritize your leads better</li>
+                    <li>Centralize sales operations</li>
+                    <li>Reduce sales cycle</li>
+                    <li>Improve sales conversions</li>
+                    <li>Improve customer retention</li>
+                  </ul>
+                </div>
+                <div style="flex-basis: 45%; max-width: 45%">
+                  <img
+                    src="https://technixcrm.com/assets/images/productivity.png"
+                    alt="Slide 1 Image"
+                    style="width: 100%; height: auto; border-radius: 12px"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <ul class="footer-links">
-                    <li>Phone: <a href="tel:+917421000303" style="color: #007bff;">+91-742-100-0303</a></li> <!-- Blue for clue text -->
-                    <li>Email: <a href="mailto:info@technixtechnology.com" style="color: #007bff;">info@technixtechnology.com</a></li> <!-- Blue for clue text -->
-                </ul>
+          </div>
+          <div class="slide slide-2">
+            <div class="glass-card">
+              <div style="display: flex; gap: 1rem; align-items: flex-start">
+                <div
+                  style="
+                    flex-basis: 55%;
+                    max-width: 55%;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                    color: white;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                  "
+                >
+                  <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem">
+                    Maximize CLV
+                  </h2>
+                  <p style="color: var(--primary-dark); font-weight: 500">
+                    Maximizing customer lifetime value (CLV) is a continuous
+                    process that requires dedication and focus.
+                  </p>
+                  <ul>
+                    <li>Offer a Referral Program</li>
+                    <li>Provide Targeted, Personalized Campaigns</li>
+                    <li>Put Them First – Listen Your Customers</li>
+                    <li>Optimize Your Customer Service</li>
+                    <li>Reward Your Most Loyal Clients</li>
+                    <li>Benefit from Cross-Selling and Upselling</li>
+                  </ul>
+                </div>
+                <div style="flex-basis: 45%; max-width: 45%">
+                  <img
+                    src="https://technixcrm.com/assets/images/clv.png"
+                    alt="Slide 2 Image"
+                    style="width: 100%; height: auto; border-radius: 12px"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#"> &copy; Copy Rights </a></li>
-                </ul>
+          </div>
+          <div class="slide slide-3">
+            <div class="glass-card">
+              <div style="display: flex; gap: 1rem; align-items: flex-start">
+                <div
+                  style="
+                    flex-basis: 55%;
+                    max-width: 55%;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                    color: white;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                  "
+                >
+                  <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem">
+                    Streamline Processes
+                  </h2>
+                  <p style="color: var(--primary-dark); font-weight: 500">
+                    From managing leads to simplifying the sales pipeline,
+                    automate repetitive tasks and boost performance.
+                  </p>
+                  <ul>
+                    <li>Automate repetitive tasks</li>
+                    <li>Manage prospects within your sales funnel</li>
+                    <li>Improved data consolidation</li>
+                    <li>Monitor progress with analytics tools</li>
+                    <li>Generate productivity reports</li>
+                    <li>Facilitated marketing campaigns</li>
+                  </ul>
+                </div>
+                <div style="flex-basis: 45%; max-width: 45%">
+                  <img
+                    src="https://technixcrm.com/assets/images/Collaboration.png"
+                    alt="Slide 3 Image"
+                    style="width: 100%; height: auto; border-radius: 12px"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <p style="background-color: black; color: white; margin-top: 0; text-align: center; padding: 1rem;">&copy; 2025 | Made with 💝 by Team Neo Athelios</p>
-    </footer>
+      </div>
 
+              <section id="features" class="features">
+                <div class="section-header">
+                  <h2>Features</h2>
+                  <p>Everything you need to manage customer relationships effectively.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;">
+                      <svg width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#000000" stroke-width="2" d="M20,14 L20,21 L4,21 L4,14 L4,14 M1,12 L23,12 L1,12 Z M4,11 L4,8 L4,11 Z M20,8 L20,11 L20,8 Z M7,3 L4,3 L4,6 M20,6 L20,3 L17,3 M9,3 L15,3 L9,3 Z" transform="matrix(1 0 0 -1 0 24)"></path>
+                      </svg>
+                    </div>
+                    <h3>Lead Capture</h3>
+                    <p>Automatically gather and organize leads from various channels to ensure no opportunity is missed, and every prospect gets timely follow-up.</p>
+                    </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="40px" height="30px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M547.84 324.315429v425.910857c0 17.334857-16.091429 31.305143-35.84 31.305143s-35.84-13.970286-35.84-31.305143V315.611429l-43.008 48.201142-13.677714 13.385143a37.302857 37.302857 0 0 1-51.931429 0.438857 35.328 35.328 0 0 1-0.512-50.395428l114.322286-120.466286a36.571429 36.571429 0 0 1 52.077714-0.950857l122.514286 119.515429c13.677714 14.482286 13.165714 37.302857-1.243429 51.053714a40.228571 40.228571 0 0 1-54.857143 0.585143l-14.555428-13.165715-37.449143-39.497142z m184.32-18.212572h85.430857c56.32 0 101.888-49.078857 101.888-109.714286 0-60.562286-45.641143-109.714286-101.888-109.714285H206.336c-56.246857 0-101.814857 49.152-101.814857 109.714285 0 60.635429 45.568 109.714286 101.814857 109.714286H294.765714c8.045714 0 14.628571 6.582857 14.628572 14.628572v43.885714a14.628571 14.628571 0 0 1-14.628572 14.628571H206.336C112.64 379.245714 36.571429 297.325714 36.571429 196.388571s76.068571-182.857143 169.764571-182.857142h611.254857c93.769143 0 169.764571 81.92 169.764572 182.857142s-75.995429 182.857143-169.691429 182.857143h-85.577143a14.628571 14.628571 0 0 1-14.628571-14.628571v-43.885714c0-8.045714 6.582857-14.628571 14.628571-14.628572z m0 365.714286a14.628571 14.628571 0 0 1-14.628571-14.628572v-43.885714c0-8.045714 6.582857-14.628571 14.628571-14.628571h85.504c93.769143 0 169.764571 81.92 169.764571 182.857143s-76.068571 182.857143-169.764571 182.857142H206.409143c-93.769143 0-169.764571-81.92-169.764572-182.857142s75.995429-182.857143 169.691429-182.857143H294.765714c8.045714 0 14.628571 6.582857 14.628572 14.628571v43.885714a14.628571 14.628571 0 0 1-14.628572 14.628572H206.409143c-56.32 0-101.888 49.152-101.888 109.714286 0 60.635429 45.641143 109.714286 101.888 109.714285h611.254857c56.246857 0 101.814857-49.078857 101.814857-109.714285 0-60.562286-45.568-109.714286-101.814857-109.714286h-85.577143zM138.459429 525.677714c-18.724571 0-33.938286-16.310857-33.938286-36.571428 0-20.187429 15.213714-36.571429 33.938286-36.571429H293.302857c8.045714 0 14.628571 6.582857 14.628572 14.628572v43.885714a14.628571 14.628571 0 0 1-14.628572 14.628571H138.459429z m589.750857-14.774857v-43.885714c0-8.045714 6.582857-14.628571 14.628571-14.628572h168.521143a36.571429 36.571429 0 0 1 0 73.142858h-168.521143a14.628571 14.628571 0 0 1-14.628571-14.628572z" fill="#000000"></path></svg></div>
+                    <h3>Import Data</h3>
+                    <p>Seamlessly bring in your existing customer or lead data from other tools or spreadsheets, with fast, structured imports that retain data integrity.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="40px" height="40px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M904.54945 240.058217c1.023996-9.435388-7.021684-19.382774-16.6765-24.283325L461.671348 2.63752a24.137039 24.137039 0 0 0-21.869621 0L13.45384 215.774892c-15.871932 10.386241-13.385085 33.426142-13.385085 35.839847V706.56136c0 8.411393 4.461695 16.310787 11.702807 20.772483 0 0 417.131927 252.049206 424.226753 255.267477 14.628509 7.241112 23.844469 5.266263 30.719868 1.755421l138.824548-80.310513c11.922235-6.948542 12.873088-17.481068 11.263952-35.693561-1.462851-18.139351-17.334783-28.013594-29.03759-21.28448-11.702807 6.655971-103.496699 61.951734-103.496699 61.951734V493.570273l367.906994-214.161368 38.619263-23.405614c7.75311-4.973693 12.726803-11.337094 13.750799-15.945074z m-486.397916 663.914869L63.77591 687.910012V290.234002L418.151534 493.716558v410.183385z m32.402147-476.523672L113.439697 236.327947 450.553681 67.880669l337.113984 168.447278-337.113984 191.121467z m345.964232 493.346457v-186.074631a24.868465 24.868465 0 0 1 7.753109-17.919923l123.610899-117.540068a20.918767 20.918767 0 0 0-15.213649-35.181564h-293.3016a20.918767 20.918767 0 0 0-14.628509 35.766704l113.956083 117.905781a24.72218 24.72218 0 0 1 6.948542 17.188497v136.922842c0 13.750798-13.165658 24.868465-26.843314 24.868465a24.795322 24.795322 0 0 1-24.795322-24.868465v-126.902313l-106.714971-105.325263c-13.092515-13.019373-26.331316-35.839846-26.331316-54.63748 0-38.838691 37.448982-78.481949 76.360816-78.481949h299.884429c38.911833 0 70.582555 39.570116 70.582554 78.481949 0 18.797634-7.314254 36.424987-20.699339 49.73693l-116.296645 110.664668v175.39582c0 13.750798-12.726803 24.868465-26.404458 24.868465s-27.794167-11.117667-27.794167-24.868465z" fill="#000000"></path></svg></div>
+                    <h3>Data Allotment</h3>
+                    <p>Distribute leads and contacts fairly and strategically across your team, so everyone works smarter and customer interactions stay efficient.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="40px" height="40px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M829.06 73.14h-6.48c-30.41 0-58.57 17.11-75.34 45.75-6.12 10.46-22.29 11.71-29.96 2.43-25.52-31.07-59.41-48.18-95.64-48.18-35.98 0-69.86 17.11-95.41 48.18-6.98 8.5-21.25 8.52-28.27-0.02-25.55-31.05-59.43-48.16-95.41-48.16s-69.86 17.11-95.41 48.18c-7.66 9.36-23.82 8.05-29.95-2.43-16.8-28.64-44.96-45.75-75.36-45.75h-7.23c-46.89 0-85.05 38.16-85.05 85.05V865.8c0 46.89 38.16 85.05 85.05 85.05h7.23c30.39 0 58.55-17.11 75.38-45.79 6.07-10.45 22.23-11.79 29.93-2.38 25.55 31.05 59.43 48.16 95.41 48.16s69.86-17.11 95.41-48.18c7.02-8.52 21.29-8.5 28.27 0.02 25.55 31.05 59.43 48.16 95.66 48.16 35.98 0 69.88-17.11 95.38-48.14 7.73-9.36 23.89-8 29.96 2.36 16.79 28.68 44.95 45.79 75.36 45.79h6.48c46.89 0 85.05-38.16 85.05-85.05V158.2c0-46.9-38.17-85.06-85.06-85.06z m11.91 792.66c0 6.57-5.34 11.91-11.91 11.91h-6.48c-6.14 0-10.91-7.34-12.23-9.61-16.36-27.91-46.61-45.25-78.93-45.25-27.43 0-53.16 12.16-70.64 33.39-6.59 8.02-20.41 21.46-39.14 21.46-18.48 0-32.32-13.46-38.91-21.46-34.84-42.45-106.39-42.46-141.27-0.02-6.59 8.02-20.43 21.48-38.91 21.48-18.48 0-32.32-13.46-38.91-21.46-17.43-21.23-43.18-33.39-70.62-33.39-32.36 0-62.61 17.36-78.93 45.25-1.32 2.25-6.11 9.61-12.25 9.61h-7.23c-6.57 0-11.91-5.34-11.91-11.91V158.2c0-6.57 5.34-11.91 11.91-11.91h7.23c6.14 0 10.93 7.36 12.23 9.57 16.34 27.93 46.59 45.29 78.95 45.29 27.45 0 53.2-12.16 70.62-33.38 6.59-8.02 20.43-21.48 38.91-21.48 18.48 0 32.32 13.46 38.91 21.46 34.88 42.48 106.43 42.43 141.27 0.02 6.59-8.02 20.43-21.48 39.16-21.48 18.48 0 32.3 13.45 38.91 21.5 17.46 21.2 43.2 33.36 70.62 33.36 32.32 0 62.57-17.34 78.95-45.29 1.3-2.23 6.07-9.57 12.21-9.57h6.48c6.57 0 11.91 5.34 11.91 11.91v707.6z" fill="#0F1F3C"></path><path d="M255.93 548.66h365.71v73.14H255.93zM255.92 694.93h511.82v73.14H255.92zM621.54 329.23h58l-83.85 83.86 51.71 51.71 83.86-83.85v58h73.14V256.09H621.54z" fill="#0F1F3C"></path></svg></div>
+                    <h3>Task Assignment</h3>
+                    <p>Assign, track, and manage tasks across your team to ensure clarity, accountability, and timely execution of business activities.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="40px" height="40px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>user_follow_line</title>
+                      <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="User" transform="translate(-384.000000, 0.000000)">
+                              <g id="user_follow_line" transform="translate(384.000000, 0.000000)">
+                                  <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero">
+                  
+                  </path>
+                                  <path d="M16,14 C18.7614,14 21,16.2386 21,19 L21,21 C21,21.5523 20.5523,22 20,22 C19.4477,22 19,21.5523 19,21 L19,19 C19,17.3431 17.6569,16 16,16 L8,16 C6.34315,16 5,17.3431 5,19 L5,21 C5,21.5523 4.55228,22 4,22 C3.44772,22 3,21.5523 3,21 L3,19 C3,16.2386 5.23858,14 8,14 L16,14 Z M21.4141,9.08128 C21.8047,8.69076 22.4378,8.69076 22.8284,9.08128 C23.1888615,9.44176923 23.2165893,10.009022 22.9115834,10.4012974 L22.8284,10.4955 L19.9999,13.3239 C19.6394385,13.6843615 19.0721793,13.7120893 18.6799027,13.4070834 L18.5857,13.3239 L17.1715,11.9097 C16.781,11.5192 16.781,10.886 17.1715,10.4955 C17.5319615,10.1350385 18.0992207,10.1073107 18.4914973,10.4123166 L18.5857,10.4955 L19.2928,11.2026 L21.4141,9.08128 Z M12,2 C14.7614,2 17,4.23858 17,7 C17,9.76142 14.7614,12 12,12 C9.23858,12 7,9.76142 7,7 C7,4.23858 9.23858,2 12,2 Z M12,4 C10.3431,4 9,5.34315 9,7 C9,8.65685 10.3431,10 12,10 C13.6569,10 15,8.65685 15,7 C15,5.34315 13.6569,4 12,4 Z" id="形状" fill="#09244B">
+                  
+                  </path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg></div>
+                    <h3>Follow-up Reminder</h3>
+                    <p>Automated reminders keep your team on schedule, ensuring no lead goes cold and every client receives timely communication.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg fill="#000000" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.5,15.5h-5a1,1,0,0,0-1,1v5a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1V20H12a1,1,0,0,0,0-2H8.5V16.5A1,1,0,0,0,7.5,15.5Zm-1,5h-3v-3h3ZM4,8.858V13a1,1,0,0,0,2,0V8.858a4,4,0,1,0-2,0ZM5,3A2,2,0,1,1,3,5,2,2,0,0,1,5,3ZM20,15.142V12a1,1,0,0,0-2,0v3.142a4,4,0,1,0,2,0ZM19,21a2,2,0,1,1,2-2A2,2,0,0,1,19,21ZM16.5,8.5h5a1,1,0,0,0,1-1v-5a1,1,0,0,0-1-1h-5a1,1,0,0,0-1,1V4H12a1,1,0,0,0,0,2h3.5V7.5A1,1,0,0,0,16.5,8.5Zm1-5h3v3h-3Z"></path></svg></div>
+                    <h3>Workflow and Approvals</h3>
+                    <p>Build structured workflows with approval checkpoints to keep your operations smooth, compliant, and decision-making aligned.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg fill="#000000" height="40px" width="40px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 247.065 247.065" xml:space="preserve">
+                      <g>
+                          <path d="M160.551,36.935c-0.614-1.892-1.956-3.462-3.727-4.365c-1.774-0.904-3.831-1.065-5.724-0.45l-31.376,10.196
+                              c-3.939,1.28-6.096,5.511-4.815,9.45l1.568,4.828l-79.811,58.625L5.183,125.448c-1.892,0.615-3.462,1.956-4.365,3.728
+                              c-0.903,1.772-1.065,3.831-0.45,5.723l19.129,58.862c1.03,3.169,3.97,5.184,7.131,5.184c0.769,0,1.55-0.119,2.32-0.369
+                              l31.478-10.229l16.173,0.085c3.248,15.336,16.888,26.88,33.176,26.88c16.164,0,29.714-11.371,33.095-26.531l16.587,0.087
+                              l1.568,4.829c0.614,1.892,1.955,3.462,3.728,4.365c1.064,0.542,2.232,0.817,3.405,0.817c0.78,0,1.563-0.122,2.317-0.367
+                              l31.377-10.195c3.939-1.28,6.096-5.511,4.816-9.45L160.551,36.935z M31.444,181.992l-14.492-44.597l18.364-5.967l14.49,44.597
+                              L31.444,181.992z M109.774,200.312c-7.912,0-14.694-4.887-17.513-11.797l34.958,0.184
+                              C124.356,195.514,117.617,200.312,109.774,200.312z M64.714,173.369l-7.888-24.277l-7.888-24.277l72.419-53.194l22.209,68.349
+                              l11.006,33.873L64.714,173.369z M172.972,181.929l-0.921-2.833c-0.001-0.005-0.002-0.011-0.004-0.017l-19.815-60.983l-20.74-63.833
+                              l17.111-5.561l41.48,127.665L172.972,181.929z"></path>
+                          <path d="M185.807,73.393c1.092,0.556,2.254,0.819,3.4,0.819c2.73,0,5.363-1.496,6.688-4.096l13.461-26.41
+                              c1.882-3.69,0.415-8.207-3.275-10.088c-3.69-1.88-8.207-0.415-10.088,3.276l-13.461,26.41
+                              C180.65,66.995,182.117,71.512,185.807,73.393z"></path>
+                          <path d="M242.176,144.712l-26.414-13.455c-3.691-1.879-8.207-0.412-10.087,3.279c-1.881,3.691-0.412,8.207,3.278,10.087
+                              l26.414,13.455c1.091,0.555,2.253,0.818,3.398,0.818c2.73,0,5.364-1.497,6.689-4.097
+                              C247.335,151.109,245.867,146.593,242.176,144.712z"></path>
+                          <path d="M204.242,101.204c1.03,3.169,3.97,5.184,7.131,5.184c0.769,0,1.55-0.119,2.32-0.369l28.188-9.16
+                              c3.938-1.28,6.095-5.511,4.814-9.451c-1.28-3.94-5.511-6.092-9.451-4.815l-28.188,9.16
+                              C205.118,93.034,202.962,97.265,204.242,101.204z"></path>
+                      </g>
+                      </svg></div>
+                    <h3>Marketing Automation</h3>
+                    <p>Automate marketing actions like emails and campaigns to engage your audience consistently, nurture leads, and drive conversions with less manual effort.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="50px" height="50px" viewBox="0 0 48 48" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1,.cls-2{fill:none;stroke:#1d1d1b;stroke-linecap:round;stroke-linejoin:round;}.cls-1{stroke-width:1.92px;}.cls-2{stroke-width:2px;}</style></defs><title></title><path class="cls-1" d="M24,1A23,23,0,1,0,47,24H24Z"></path><path class="cls-2" d="M30,1V18H47A17,17,0,0,0,30,1Z"></path></svg></div>
+                    <h3>Sales Performance</h3>
+                    <p>Track individual and team sales activity with visual dashboards and performance insights to make informed decisions and improve outcomes.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8.03471C9.3028 8.03471 7.11628 10.1864 7.11628 12.8406C7.11628 14.1679 7.66214 15.3684 8.54669 16.2388C8.81915 16.5069 8.81915 16.9417 8.54669 17.2098C8.27423 17.4779 7.83249 17.4779 7.56003 17.2098C6.4245 16.0923 5.72093 14.5467 5.72093 12.8406C5.72093 9.42803 8.53217 6.66161 12 6.66161C15.4678 6.66161 18.2791 9.42803 18.2791 12.8406C18.2791 14.5467 17.5755 16.0923 16.44 17.2098C16.1675 17.4779 15.7258 17.4779 15.4533 17.2098C15.1809 16.9417 15.1809 16.5069 15.4533 16.2388C16.3379 15.3684 16.8837 14.1679 16.8837 12.8406C16.8837 10.1864 14.6972 8.03471 12 8.03471Z" fill="#1C274C"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.3731C7.24778 4.3731 3.39535 8.16412 3.39535 12.8406C3.39535 15.179 4.35769 17.2949 5.91559 18.828C6.18805 19.0961 6.18805 19.5308 5.91559 19.7989C5.64313 20.067 5.20139 20.067 4.92893 19.7989C3.12005 18.0189 2 15.5578 2 12.8406C2 7.40578 6.47715 3 12 3C17.5228 3 22 7.40578 22 12.8406C22 15.5578 20.8799 18.0189 19.0711 19.7989C18.7986 20.067 18.3569 20.067 18.0844 19.7989C17.8119 19.5308 17.8119 19.0961 18.0844 18.828C19.6423 17.2949 20.6047 15.179 20.6047 12.8406C20.6047 8.16412 16.7522 4.3731 12 4.3731Z" fill="#1C274C"></path>
+                      <path d="M10.3099 17.3441C11.0774 16.4683 11.4612 16.0304 11.935 16.002C11.9783 15.9993 12.0217 15.9993 12.065 16.002C12.5389 16.0304 12.9226 16.4683 13.6901 17.3441C15.3601 19.2497 16.1951 20.2025 15.9613 21.0245C15.9412 21.0952 15.9163 21.1639 15.8867 21.2301C15.5426 22 14.3617 22 12 22C9.63827 22 8.45741 22 8.11329 21.2301C8.08371 21.1639 8.05875 21.0952 8.03866 21.0245C7.80489 20.2025 8.63989 19.2497 10.3099 17.3441Z" fill="#1C274C"></path>
+                      <path d="M14.5 12.5C14.5 13.8807 13.3807 15 12 15C10.6193 15 9.5 13.8807 9.5 12.5C9.5 11.1193 10.6193 10 12 10C13.3807 10 14.5 11.1193 14.5 12.5Z" fill="#1C274C"></path>
+                      </svg></div>
+                    <h3>Client Services</h3>
+                    <p>Centralize support and service processes to handle client requests efficiently, improve satisfaction, and deliver a professional customer experience.</p>
+                  </div>
+                  <div class="feature-card">
+                    <div class="feature-icon" style="border: 2px solid black; border-radius: 6px; padding: 5px;"><svg width="40px" height="40px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><path d="M39.46,40.7V54.87a3.06,3.06,0,0,1-3.07,3.06H15.18a3.06,3.06,0,0,1-3.06-3.06V9.13a3.06,3.06,0,0,1,3.06-3.06H36.39a3.06,3.06,0,0,1,3.07,3.06V20"></path><line x1="20.79" y1="10.34" x2="26.88" y2="10.34" stroke-linecap="round"></line><line x1="24.27" y1="53.47" x2="27.31" y2="53.47" stroke-linecap="round"></line><line x1="30.66" y1="10.34" x2="30.78" y2="10.34" stroke-linecap="round"></line><line x1="12.12" y1="49.36" x2="39.46" y2="49.36"></line><line x1="12.12" y1="14.75" x2="39.46" y2="14.75"></line><path d="M24.88,20H49.74a2.14,2.14,0,0,1,2.14,2.14V38.56a2.14,2.14,0,0,1-2.14,2.14H24a2.14,2.14,0,0,1-2.14-2.14V23A3,3,0,0,1,24.88,20Z"></path><line x1="21.88" y1="24.43" x2="51.88" y2="24.43"></line><line x1="21.88" y1="28.26" x2="51.88" y2="28.26"></line><path d="M46.15,32.67a2.37,2.37,0,0,0-1.43.49,2.33,2.33,0,1,0-1.42,4.18,2.27,2.27,0,0,0,1.42-.5,2.33,2.33,0,1,0,1.43-4.17Z"></path></svg></div>
+                    <h3>Payment Tracking</h3>
+                    <p>Monitor payments, manage dues, and maintain accurate financial records to ensure transparency and smooth transaction handling.</p>
+                  </div>
+                </div>
+              </section>
+              <section id="vertical-menu-content">
+                <nav class="vertical-menu">
+                  <ul>
+                    <li class="menu-item active">Lead Management</li>
+                    <li class="menu-item">Contact Management</li>
+                    <li class="menu-item">Sales Automation</li>
+                    <li class="menu-item">Document Management</li>
+                    <li class="menu-item">Campaign Management</li>
+                    <li class="menu-item">Task Management</li>
+                    <li class="menu-item">Reporting</li>
+                    <li class="menu-item">Activity Management</li>
+                  </ul>
+                </nav>
+                <div class="content-display">
+                  <div class="content-text">
+                    <h3>Text 1</h3>
+                    <p>text here</p>
+                  </div>
+                  <div class="content-image">
+                    <img src="https://via.placeholder.com/300x200?text=Pic+1" alt="Pic 1" />
+                  </div>
+                </div>
+              </section>
+              <div class="below-header-buttons">
+                <a href="https://neo-athelios.github.io/WebDash-book-a-demo/" class="btn btn-primary" id="bookDemoBtn">Book a Demo</a>
+                <a href="http://app.technixcrm.com/signup" class="btn btn-outline" id="freeTrialBtn">Free Trial</a>
+              </div>
+              </section>
+              <section id="experience" class="experience" style="padding: 2rem 5%; background: linear-gradient(90deg, rgba(37, 99, 235, 0.1), rgba(249, 115, 22, 0.1));">
+                <div class="experience-container" style="display: flex; gap: 2rem; justify-content: center; align-items: center;">
+                  <div class="experience-image" style="flex: 1; border: 4px solid var(--primary); border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <img src="https://technixcrm.com/assets/images/strp.png" alt="Experience Image 1" style="width: 100%; height: auto; border-radius: 8px;">
+                  </div>
+                  <div class="experience-image" style="flex: 1; border: 4px solid var(--secondary); border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <img src="https://technixcrm.com/assets/images/experience.png" alt="Experience Image 2" style="width: 100%; height: auto; border-radius: 8px;">
+                  </div>
+                </div>
+              </section>
+              <section id="contact" class="contact">
+                <div class="contact-container">
+                  <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions about TechnixCRM? Our team is here to help you grow your business.</p>
+                    <div class="contact-details">
+                      <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                          <h4>Phone</h4>
+                          <a href="tel:+917421000303">+91 742 100 0303</a>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                          <h4>Email</h4>
+                          <a href="mailto:info@technixtechnology.com">info@technixtechnology.com</a>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <div class="contact-icon">🏢</div>
+                        <div class="contact-text">
+                          <h4>Office</h4>
+                          <p>123 Business Park, New Delhi, India</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                      <div style="margin-bottom: 1rem;">
+                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px;">
+                      </div>
+                      <div style="margin-bottom: 1rem;">
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px;">
+                      </div>
+                      <div style="margin-bottom: 1rem;">
+                        <textarea placeholder="Your Message" rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px;"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <div class="modal" id="popupModal">
+              <div class="modal-content">
+                <h2 id="modalTitle">Coming Soon</h2>
+                <p id="modalText">This feature is not available yet.</p>
+                <button class="close-btn" onclick="closeModal()">Close</button>
+              </div>
+            </div>
+            <footer id = footer>
+              <div class="footer-container">
+                    <div class="footer-column">
+                    <h3>
+                        <a href="https://neo-athelios.github.io/WebDash/">
+                          <img src="logo.png" alt="TechnixCRM Logo" style="width: 230px; height: auto; border-radius: 12px;">
+                        </a>
+                    </h3>
+                    <p style="color: var(--light-gray);">The complete customer relationship management solution for businesses of all sizes.</p>
+                    </div>
+                <div class="footer-column">
+                  <h3><u>Quick Links</u></h3>
+                  <ul class="footer-links">
+                    <li><a href="#home">Home <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="#features">Features <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="#contact">Contact <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="https://neo-athelios.github.io/WebDash-book-a-demo/">Demo <img src="icons8-up-right-24.png" style="width: 10px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="http://app.technixcrm.com/signup">Trial <img src="icons8-up-right-24.png" style="width: 10px;vertical-align: middle; margin-left: 5px;"></a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3><u>Company</u></h3>
+                  <ul class="footer-links">
+                    <li><a href="#">About Us <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="#">Careers <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="#">Blog <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="#">Press <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3><u>Legal</u></h3>
+                  <ul class="footer-links">
+                    <li><a href="https://technixcrm.com/privacy-policy.html">Privacy Policy <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="https://technixcrm.com/terms-conditions.html">Terms of Service <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="#">Cookie Policy <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                    <li><a href="https://technixcrm.com/terms-conditions.html">  &copy; 2025 TechnixCRM <img src="icons8-up-right-24.png" style="width: 12px;vertical-align: middle; margin-left: 5px;"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                <center style="background: #1e3b8b; color: white;">
+                  Follow us on 
+                  <a href="https://www.linkedin.com/company/technixtechnology" style="color: white;">
+                <img src="icons8-linkedin-48.png" alt="LinkedIn" style="background: orange; border-radius: 50%; width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">LinkedIn
+                  </a> | 
+                  <a href="https://www.facebook.com/technixtechnology" style="color: white;">
+                <img src="icons8-facebook-30.png" alt="Facebook" style="background: orange; border-radius: 50%; width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">Facebook
+                  </a> | 
+                  <a href="https://www.youtube.com/technixtechnology" style="color: white;">
+                <img src="icons8-youtube-50.png" alt="YouTube" style="background: orange; border-radius: 50%; width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">YouTube
+                  </a>
+                </center>
+              </p>
+              <br>
+              <p><center style="background: black; color: white; font-weight: bold;">  &copy; 2025 TechnixCRM  |  All rights reserved  |  Made with ❤️ by Team Neo Athelios for WebDash - A Website Development Challenge by IEEE JMI </center></p>
+              </footer>
     <script src="script.js"></script>
 </body>
 </html>
