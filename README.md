@@ -197,6 +197,9 @@ This is a **responsive grid** of feature cards. Each card uses a box-shadow and 
 These are **floating CTA buttons** that stay right below the navbar. The `btn-primary` is solid blue, and `btn-outline` has a bordered, subtle design.
 
 ---
+## Scope of Improvement 
+- Mobile Responsiveness
+---
 
 
 
