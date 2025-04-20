@@ -14,6 +14,11 @@ TechnixCRM is a beautifully designed front-end website project for a CRM (Custom
 
 This is perfect as a **landing page demo**, a **prototype for pitching** a CRM solution, or a **starter UI for developers building CRM systems**.
 
+Snapshot :
+-
+![Screenshot_20-4-2025_10277_neo-athelios github io](https://github.com/user-attachments/assets/b20ad13f-bef2-4466-8f65-261baa48bb5c)
+
+
 ---
 ## 📋 Table of Contents
 - [Features]
