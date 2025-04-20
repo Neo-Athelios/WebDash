@@ -204,7 +204,7 @@ WebDash 2025 - A Website Development Challenge by IEEE JMI Submission
 -
 Website:    https://neo-athelios.github.io/WebDash
 -
-Video:
+Video:    https://youtu.be/JRVpPbL6JA0
 -
 Style Guide :    https://shorturl.at/qDGtE
 -
