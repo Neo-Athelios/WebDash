@@ -206,5 +206,7 @@ Website:    https://neo-athelios.github.io/WebDash
 -
 Video:
 -
+Style Guide :    https://shorturl.at/qDGtE
+-
 Problem Statement:    https://shorturl.at/GM9fk
 -
