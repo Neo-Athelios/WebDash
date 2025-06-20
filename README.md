@@ -89,6 +89,8 @@ Once the page loads:
 
 ## 👥 Contributors
 
+![Contributors](https://contrib.rocks/image?repo=Neo-Athelios/WebDash-book-a-demo)
+
 Thanks to the following people for their contributions:
 - 🧠 [@MukundXplore](https://github.com/MukundXplore)
 - ⚙️ [@TheCodeCipher](https://github.com/TheCodeCipher)
